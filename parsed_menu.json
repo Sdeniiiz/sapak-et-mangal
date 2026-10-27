@@ -1,0 +1,152 @@
+[
+  {
+    "category": "Izgaralar",
+    "subtitle": "Et, tavuk ve köfteler kg ile satılmaktadır",
+    "items": [
+      {
+        "name": "Kuzu Pirzola",
+        "price": "",
+        "img": "/images/menu/current/kuzu-pirzola-kg.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Et Izgara",
+        "price": "",
+        "img": "/images/menu/current/et-izgara-kg.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Et Biftek",
+        "price": "",
+        "img": "/images/menu/current/et-biftek-kg.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Kuzu Lokum",
+        "price": "",
+        "img": "/images/menu/current/kuzu-lokum-kg.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Akçaabat Köfte",
+        "price": "",
+        "img": "/images/menu/current/akcabat-kofte-kg.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Tavuk Kanat",
+        "price": "",
+        "img": "/images/menu/current/tavuk-kanat-kg.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Tavuk Kelebek",
+        "price": "",
+        "img": "/images/menu/current/tavuk-kelebek-kg.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Tavuk Pirzola",
+        "price": "",
+        "img": "/images/menu/current/tavuk-pirzola-kg.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Karışık Izgara",
+        "price": "",
+        "img": "/images/menu/current/karisik-izgara-kg.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Sac Kavurma",
+        "price": "",
+        "img": "/images/menu/current/sac-kavurma.jpg",
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "category": "Kahvaltı ve Sıcaklar",
+    "subtitle": "Şube menüsündeki sıcak lezzetler",
+    "items": [
+      {
+        "name": "Köy Kahvaltısı",
+        "price": "",
+        "img": "/images/menu/current/koy-kahvaltisi.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Semaver Çay",
+        "price": "",
+        "img": "/images/menu/current/semaver-cay.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Türk Kahvesi",
+        "price": "",
+        "img": "/images/menu/current/turk-kahvesi.jpg",
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "category": "İçecekler ve Atıştırmalıklar",
+    "subtitle": "Soğuk içecek, tatlı ve çerez",
+    "items": [
+      {
+        "name": "Kola",
+        "price": "",
+        "img": "/images/menu/current/soguk-icecekler.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Fanta",
+        "price": "",
+        "img": "/images/menu/current/soguk-icecekler.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Soda",
+        "price": "",
+        "img": "/images/menu/current/soguk-icecekler.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Meyveli Soda",
+        "price": "",
+        "img": "/images/menu/current/soguk-icecekler.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Su",
+        "price": "",
+        "img": "/images/menu/current/soguk-icecekler.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Ayran",
+        "price": "",
+        "img": "/images/menu/current/ayran-salgam.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Şalgam",
+        "price": "",
+        "img": "/images/menu/current/ayran-salgam.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Dondurma",
+        "price": "",
+        "img": "/images/menu/current/dondurma.jpg",
+        "desc": ""
+      },
+      {
+        "name": "Çerezler",
+        "price": "",
+        "img": "/images/menu/current/cerezler.jpg",
+        "desc": ""
+      }
+    ]
+  }
+]

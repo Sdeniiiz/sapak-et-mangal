@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <defs>
+    <radialGradient id="coal" cx="50%" cy="56%" r="58%">
+      <stop offset="0" stop-color="#331008"/>
+      <stop offset="0.58" stop-color="#120805"/>
+      <stop offset="1" stop-color="#060403"/>
+    </radialGradient>
+    <linearGradient id="fire" x1="20" x2="60" y1="70" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="0.48" stop-color="#ef2416"/>
+      <stop offset="1" stop-color="#ffd76a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="80" y1="0" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff1bd"/>
+      <stop offset="0.38" stop-color="#d9a441"/>
+      <stop offset="1" stop-color="#b87d19"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ember Flame Emblem -->
+  <g transform="translate(10, 5) scale(0.155)">
+    <circle cx="256" cy="256" r="236" fill="url(#coal)"/>
+    <circle cx="256" cy="256" r="206" fill="none" stroke="url(#gold)" stroke-width="14" opacity=".9"/>
+    <path d="M120 352 380 92" stroke="url(#gold)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M172 400 432 140" stroke="url(#gold)" stroke-width="26" stroke-linecap="round" opacity=".92"/>
+    <path d="M172 352c-24-100 68-152 56-252 64 48 84 108 68 172 68-68 48-152 20-212 124 92 180 208 140 320-32 84-108 132-204 132-40 0-68-16-80-160Z" fill="url(#fire)"/>
+    <path d="M240 380c-60-64 16-124 4-204 64 52 88 112 52 192-16 36-36 44-56 12Z" fill="#ffe08a" opacity=".88"/>
+    <path d="M140 396c60 32 156 36 236-4" fill="none" stroke="url(#gold)" stroke-width="18" stroke-linecap="round" opacity=".86"/>
+  </g>
+
+  <!-- Brand Typography with SAPAK -->
+  <text x="98" y="38" font-family="'Montserrat', 'Poppins', 'Cinzel', serif" font-size="28" font-weight="900" letter-spacing="3" fill="#ffffff">SAPAK</text>
+  <text x="100" y="60" font-family="'Montserrat', 'Poppins', sans-serif" font-size="14" font-weight="700" letter-spacing="6" fill="#d9a441">ET MANGAL</text>
+  <text x="100" y="78" font-family="'Montserrat', 'Poppins', sans-serif" font-size="10.5" font-weight="600" letter-spacing="4" fill="#a89a8c">BAFRA</text>
+</svg>

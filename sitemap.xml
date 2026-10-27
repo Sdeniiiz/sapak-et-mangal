@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://sapaketmangalbafra.com/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sapaketmangalbafra.com/images/hero1.jpg</image:loc>
+      <image:title>Sapak Et Mangal Bafra - Meşe Közünde Et ve Izgara</image:title>
+      <image:caption>Samsun Bafra Sapak Et Mangal Restoranı</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sapaketmangalbafra.com/images/prod_pirzola.jpg</image:loc>
+      <image:title>Sapak Et Mangal Kuzu Pirzola</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sapaketmangalbafra.com/images/prod_kahvalti.jpg</image:loc>
+      <image:title>Sapak Et Mangal Serpme Köy Kahvaltısı</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://sapaketmangalbafra.com/menumuz.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://sapaketmangalbafra.com/rezervasyon.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://sapaketmangalbafra.com/hikayemiz.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sapaketmangalbafra.com/fotogaleri.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://sapaketmangalbafra.com/videogaleri.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://sapaketmangalbafra.com/iletisim.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+</urlset>

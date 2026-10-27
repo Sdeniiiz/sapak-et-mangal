@@ -1,0 +1,2753 @@
+/* Custom adjustments for Sapak Et Mangal matching Kuzuevi Et Mangal design */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+.fa,
+i.fa,
+span.fa,
+.fa:before,
+i.fa:before,
+span.fa:before,
+[class^="fa-"]:before,
+[class*=" fa-"]:before {
+    display: inline-block !important;
+    font-family: 'FontAwesome' !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #555555;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* Header & Logo styling */
+.header {
+    position: relative !important;
+    z-index: 1000;
+}
+
+.header .logo img,
+.header .logo-mobi img {
+    max-height: 65px;
+    width: auto;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.header .header-wrap {
+    background: #0d0a08;
+    border-bottom: 1px solid rgba(217, 164, 65, 0.25);
+    position: relative;
+    z-index: 1000;
+}
+
+.mainnav ul.menu > li > a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 34px 16px;
+    transition: color 0.3s ease;
+}
+
+.mainnav ul.menu > li:hover > a,
+.mainnav ul.menu > li.active > a {
+    color: #d9a441 !important;
+}
+
+.mainnav ul.submenu {
+    background-color: #16120e;
+    border-top: 2px solid #d9a441;
+}
+
+.mainnav ul.submenu > li > a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.mainnav ul.submenu > li > a:hover {
+    color: #d9a441 !important;
+    background-color: #201a14;
+}
+
+/* =========================================================
+   NO RED OVERLAPPING LINES / NO TEXT STRIKE-THROUGH
+   ========================================================= */
+.title-section .title:before,
+.title-section .title:after,
+.title-section.style2 .title:before,
+.title-section.style2 .title:after,
+.title-section.style3 .title:before,
+.title-section.style3 .title:after,
+.title-section.switch-color .title:before,
+.title-section.switch-color .title:after,
+.index-2 .reservation-page-form .title:before,
+.reservation-page-form .title:before,
+.flat-row .title-section .title:before,
+.flat-row .title-section .title:after,
+.flat-row.index-1 .title-section.style2 .title:before,
+.flat-row.menu-2 .flat-tabs .title-section .title:before,
+.flat-row.shop-1 .title-section .title:before,
+.page-title .title:before,
+.page-title .title:after,
+.menu-category-title:before,
+.menu-category-title:after,
+.review-incentive-title:before,
+.review-incentive-title:after {
+    display: none !important;
+    content: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.title-section.style2 {
+    margin-left: 0 !important;
+}
+
+/* =========================================================
+   DESKTOP ONLY (>= 992px): ABSOLUTELY HIDE MOBILE MENU & BUTTONS
+   ========================================================= */
+@media (min-width: 992px) {
+    #mainnav-mobi,
+    .mainnav-mobi,
+    .btn-menu,
+    .mobi-menu-header,
+    .mobi-menu-close,
+    .mobi-menu-footer,
+    .mobi-quick-actions {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+    }
+}
+
+/* =========================================================
+   LUXURIOUS RESPONSIVE MOBILE NAVIGATION (< 992px)
+   ========================================================= */
+@media (max-width: 991px) {
+    .btn-menu {
+        float: right !important;
+        margin: 20px 0 !important;
+        cursor: pointer !important;
+        display: block !important;
+        width: 42px !important;
+        height: 42px !important;
+        position: relative !important;
+        background: linear-gradient(135deg, rgba(217, 164, 65, 0.15), rgba(228, 76, 42, 0.15)) !important;
+        border: 1.5px solid rgba(217, 164, 65, 0.5) !important;
+        border-radius: 8px !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    }
+
+    .btn-menu:hover,
+    .btn-menu.active {
+        background: linear-gradient(135deg, #d9a441, #e44c2a) !important;
+        border-color: #ffd76a !important;
+        box-shadow: 0 0 16px rgba(217, 164, 65, 0.6) !important;
+    }
+
+    .btn-menu span,
+    .btn-menu span:before,
+    .btn-menu span:after {
+        background: #d9a441 !important;
+        content: '' !important;
+        display: block !important;
+        height: 2.5px !important;
+        position: absolute !important;
+        width: 22px !important;
+        left: 9px !important;
+        border-radius: 2px !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .btn-menu span {
+        top: 19px !important;
+    }
+
+    .btn-menu span:before {
+        top: -7px !important;
+        left: 0 !important;
+    }
+
+    .btn-menu span:after {
+        bottom: -7px !important;
+        left: 0 !important;
+    }
+
+    .btn-menu.active span {
+        background: transparent !important;
+    }
+
+    .btn-menu.active span:before {
+        top: 0 !important;
+        transform: rotate(45deg) !important;
+        background: #ffffff !important;
+    }
+
+    .btn-menu.active span:after {
+        bottom: 0 !important;
+        transform: rotate(-45deg) !important;
+        background: #ffffff !important;
+    }
+
+    /* Mobile Dropdown Drawer */
+    #mainnav-mobi,
+    .mainnav-mobi {
+        display: none;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        max-height: calc(100vh - 80px) !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        background: linear-gradient(180deg, rgba(16, 12, 9, 0.985) 0%, rgba(9, 7, 5, 0.995) 100%) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        border-top: 2px solid #d9a441 !important;
+        border-bottom: 3px solid #e44c2a !important;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.95) !important;
+        z-index: 999999 !important;
+        padding: 0 !important;
+        animation: mobiFadeIn 0.25s ease-out;
+    }
+
+    @keyframes mobiFadeIn {
+        from { opacity: 0; transform: translateY(-8px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .mobi-menu-inner {
+        padding: 16px 18px 25px 18px !important;
+    }
+
+    /* Mobile Menu Header inside Drawer */
+    .mobi-menu-header {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding-bottom: 14px !important;
+        margin-bottom: 12px !important;
+        border-bottom: 1px solid rgba(217, 164, 65, 0.2) !important;
+    }
+
+    .mobi-brand-name {
+        display: block !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 15px !important;
+        font-weight: 800 !important;
+        color: #d9a441 !important;
+        letter-spacing: 1.5px !important;
+        line-height: 1.2 !important;
+    }
+
+    .mobi-brand-tag {
+        display: block !important;
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 11px !important;
+        color: #b5a494 !important;
+        letter-spacing: 1px !important;
+    }
+
+    .mobi-menu-close {
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        color: #ffffff !important;
+        width: 32px !important;
+        height: 32px !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 14px !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .mobi-menu-close:hover {
+        background: #e44c2a !important;
+        border-color: #e44c2a !important;
+        color: #ffffff !important;
+    }
+
+    /* Menu links */
+    .menu-mobi {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .menu-mobi li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+        position: relative !important;
+        margin: 0 !important;
+    }
+
+    .menu-mobi li a {
+        display: flex !important;
+        align-items: center !important;
+        padding: 13px 12px !important;
+        color: #f0eae1 !important;
+        font-size: 13.5px !important;
+        font-weight: 700 !important;
+        font-family: 'Montserrat', sans-serif !important;
+        letter-spacing: 0.5px !important;
+        text-decoration: none !important;
+        border-radius: 8px !important;
+        transition: all 0.25s ease !important;
+    }
+
+    .mobi-icon {
+        width: 34px !important;
+        height: 34px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: rgba(217, 164, 65, 0.12) !important;
+        border: 1px solid rgba(217, 164, 65, 0.25) !important;
+        border-radius: 8px !important;
+        margin-right: 12px !important;
+        color: #d9a441 !important;
+        font-size: 14px !important;
+        flex-shrink: 0 !important;
+        transition: all 0.25s ease !important;
+    }
+
+    .mobi-text {
+        flex-grow: 1 !important;
+    }
+
+    .mobi-arrow {
+        color: rgba(255, 255, 255, 0.3) !important;
+        font-size: 15px !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .menu-mobi li a:hover,
+    .menu-mobi li.active > a {
+        color: #ffd76a !important;
+        background: linear-gradient(90deg, rgba(217, 164, 65, 0.16) 0%, transparent 100%) !important;
+    }
+
+    .menu-mobi li.active > a .mobi-icon,
+    .menu-mobi li a:hover .mobi-icon {
+        background: #d9a441 !important;
+        color: #120e0b !important;
+        border-color: #ffd76a !important;
+        transform: scale(1.05) !important;
+    }
+
+    .menu-mobi li.active > a .mobi-arrow,
+    .menu-mobi li a:hover .mobi-arrow {
+        color: #d9a441 !important;
+        transform: translateX(3px) !important;
+    }
+
+    /* Highlight item: Masa Rezervasyonu */
+    .menu-mobi li.mobi-highlight {
+        background: linear-gradient(90deg, rgba(228, 76, 42, 0.15), rgba(217, 164, 65, 0.15)) !important;
+        border: 1px solid rgba(217, 164, 65, 0.35) !important;
+        border-radius: 10px !important;
+        margin: 8px 0 !important;
+    }
+
+    .menu-mobi li.mobi-highlight a {
+        color: #ffd76a !important;
+        font-weight: 800 !important;
+    }
+
+    .mobi-icon-gold {
+        background: linear-gradient(135deg, #d9a441, #e44c2a) !important;
+        color: #ffffff !important;
+        border-color: #ffd76a !important;
+    }
+
+    .mobi-badge {
+        font-size: 10px !important;
+        background: #e44c2a !important;
+        color: #ffffff !important;
+        padding: 2px 7px !important;
+        border-radius: 12px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.5px !important;
+        text-transform: uppercase !important;
+    }
+
+    /* Submenu accordion */
+    .submenu-mobi {
+        list-style: none !important;
+        padding: 4px 0 8px 20px !important;
+        margin: 0 !important;
+        background: rgba(0, 0, 0, 0.25) !important;
+        border-radius: 8px !important;
+    }
+
+    .submenu-mobi li {
+        border-bottom: none !important;
+    }
+
+    .submenu-mobi li a {
+        padding: 9px 12px !important;
+        font-size: 12.5px !important;
+        color: #c9bfb5 !important;
+    }
+
+    .submenu-mobi li a:hover {
+        color: #ffd76a !important;
+    }
+
+    /* Dual Action CTA Cards */
+    .mobi-quick-actions {
+        display: flex !important;
+        gap: 10px !important;
+        padding: 16px 0 12px 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .btn-mobi-action {
+        flex: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        padding: 10px 12px !important;
+        border-radius: 10px !important;
+        text-decoration: none !important;
+        transition: all 0.25s ease !important;
+    }
+
+    .btn-mobi-action i {
+        font-size: 20px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .btn-mobi-action span {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: left !important;
+        line-height: 1.2 !important;
+    }
+
+    .btn-mobi-action strong {
+        font-size: 12px !important;
+        font-weight: 800 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    .btn-mobi-action small {
+        font-size: 10.5px !important;
+        opacity: 0.9 !important;
+        font-weight: 400 !important;
+    }
+
+    .btn-mobi-action.call-btn {
+        background: linear-gradient(135deg, #c73a18, #e44c2a) !important;
+        color: #ffffff !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 4px 15px rgba(228, 76, 42, 0.4) !important;
+    }
+
+    .btn-mobi-action.wa-btn {
+        background: linear-gradient(135deg, #1fa851, #25D366) !important;
+        color: #ffffff !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35) !important;
+    }
+
+    /* Footer inside Mobile Menu */
+    .mobi-menu-footer {
+        padding-top: 14px !important;
+        margin-top: 8px !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 6px !important;
+        font-size: 11.5px !important;
+        color: #a89a8c !important;
+    }
+
+    .mobi-info-item {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    .mobi-info-item i {
+        color: #d9a441 !important;
+        width: 14px !important;
+        text-align: center !important;
+    }
+
+    .mobi-socials {
+        display: flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+        margin-top: 8px !important;
+        padding-top: 8px !important;
+        border-top: 1px dashed rgba(255, 255, 255, 0.06) !important;
+    }
+
+    .mobi-socials a {
+        width: 32px !important;
+        height: 32px !important;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(217, 164, 65, 0.3) !important;
+        color: #d9a441 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 13px !important;
+        text-decoration: none !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .mobi-socials a:hover {
+        background: #d9a441 !important;
+        color: #120e0b !important;
+    }
+}
+
+/* =========================================================
+   TÜRKÇE TİPOGRAFİ DÜZELTMESİ (YAMUK / EĞİK HARFLERİ ENGELLEME)
+   ========================================================= */
+.title-section .top-section,
+.title-section .top-section p {
+    font-family: 'Montserrat', 'Poppins', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    font-size: 12.5px !important;
+    letter-spacing: 2.5px !important;
+    text-transform: uppercase !important;
+    color: #d9a441 !important;
+    margin-bottom: 10px !important;
+}
+
+.title-section .title,
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Poppins', sans-serif !important;
+    font-style: normal !important;
+    font-synthesis: none !important;
+}
+
+/* =========================================================
+   GEREKSİZ YÜZEN BUTONLARI KALDIRMA (EKRANI TIKAMAYAN TEMİZ DÜZEN)
+   ========================================================= */
+.flat-vertical.reservation,
+.box .flat-vertical.reservation,
+.flat-vertical.social-links {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
+/* =========================================================
+   ZARİF VE SİNEMATİK HERO SLIDER (BUTON KALABALIĞI YOK, FERAH DÜZEN)
+   ========================================================= */
+.hero-slider-wrap {
+    position: relative;
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    background: #0b0806;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.9s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+/* Arka Plan Görsel Katmanı & Her Slayta Özel Sinematik Hareket */
+.hero-slide-bg {
+    position: absolute;
+    inset: -3%;
+    background-size: cover;
+    background-position: center center;
+    will-change: transform;
+    transform: scale(1.06);
+    filter: brightness(0.9) contrast(1.05);
+}
+
+.hero-slide.slide-fx-zoom.active .hero-slide-bg {
+    animation: heroZoomPush 6.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-slide.slide-fx-pan-right.active .hero-slide-bg {
+    animation: heroPanRight 6.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-slide.slide-fx-pan-left.active .hero-slide-bg {
+    animation: heroPanLeft 6.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-slide.slide-fx-rise.active .hero-slide-bg {
+    animation: heroVerticalRise 6.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes heroZoomPush {
+    0%   { transform: scale(1.0) translate3d(0, 0, 0); }
+    100% { transform: scale(1.10) translate3d(0, -1.2%, 0); }
+}
+
+@keyframes heroPanRight {
+    0%   { transform: scale(1.11) translate3d(-2.5%, 0, 0); }
+    100% { transform: scale(1.03) translate3d(1.8%, 0, 0); }
+}
+
+@keyframes heroPanLeft {
+    0%   { transform: scale(1.12) translate3d(2.5%, -0.8%, 0); }
+    100% { transform: scale(1.02) translate3d(-1.8%, 0.4%, 0); }
+}
+
+@keyframes heroVerticalRise {
+    0%   { transform: scale(1.10) translate3d(0, 2%, 0); }
+    100% { transform: scale(1.02) translate3d(0, -1.5%, 0); }
+}
+
+/* Doğal Koyu Sinematik Katman & Köz Sıcaklığı */
+.hero-slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(10, 8, 6, 0.72) 0%,
+        rgba(12, 9, 6, 0.45) 50%,
+        rgba(8, 6, 4, 0.88) 100%
+    );
+    z-index: 2;
+}
+
+.hero-ember-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 65%, rgba(228, 76, 42, 0.18) 0%, rgba(217, 164, 65, 0.08) 40%, transparent 72%);
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* Hero İçerik Alanı (Ferah, Şık, İştah Kabartan Tipografi) */
+.hero-slide-content {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px 40px 20px;
+    max-width: 860px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero-subheading {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    letter-spacing: 3px !important;
+    color: #d9a441 !important;
+    text-transform: uppercase !important;
+    margin: 0 0 14px 0 !important;
+    opacity: 0;
+    transform: translateY(-12px);
+    transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+    line-height: 1.4 !important;
+}
+
+.hero-slide-title {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    text-transform: uppercase;
+    line-height: 1.16;
+    text-shadow: 0 6px 24px rgba(0, 0, 0, 0.85);
+    max-width: 100%;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    opacity: 0;
+    transform: translateY(18px);
+    transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+}
+
+.hero-slide-title .title-gold {
+    background: linear-gradient(135deg, #ffe28a 0%, #d9a441 55%, #f59c42 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.hero-slide-desc {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px;
+    color: #ede6dd;
+    max-width: 640px;
+    margin: 0 auto 26px auto;
+    font-weight: 400;
+    line-height: 1.65;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    overflow-wrap: break-word !important;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+}
+
+/* Tek, Sade ve Lüks Restoran Butonu (Kuzuevi Tarzı) */
+.btn-clean-gold {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: rgba(18, 14, 11, 0.78);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px solid #d9a441;
+    color: #ffd76a !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.2px !important;
+    text-transform: uppercase !important;
+    padding: 13px 30px !important;
+    border-radius: 4px;
+    text-decoration: none !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+    transition: all 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity: 0;
+    transform: translateY(14px);
+}
+
+.btn-clean-gold:hover {
+    background: #d9a441 !important;
+    color: #0d0a08 !important;
+    border-color: #ffd76a !important;
+    box-shadow: 0 10px 28px rgba(217, 164, 65, 0.55);
+    transform: translateY(-2px);
+}
+
+.btn-clean-gold i {
+    color: inherit;
+    font-size: 14px;
+}
+
+/* Aktif Slaytta İçeriklerin Akıcı Girişi */
+.hero-slide.active .hero-subheading,
+.hero-slide.active .hero-slide-title,
+.hero-slide.active .hero-slide-desc,
+.hero-slide.active .btn-clean-gold {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================================
+   ZARİF & MİNİMALİST SLAYT ÇİZGİ DOCK'U (ASLA TAŞMA YAPMAZ)
+   ========================================================= */
+#slider-counter.slider-minimal-dock,
+.slider-minimal-dock {
+    position: absolute !important;
+    bottom: 22px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    z-index: 25 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    background: rgba(12, 9, 7, 0.72) !important;
+    border: 1px solid rgba(217, 164, 65, 0.25) !important;
+    padding: 6px 14px !important;
+    border-radius: 30px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+    width: auto !important;
+    max-width: 90vw !important;
+}
+
+#slider-counter:before,
+#slider-counter:after {
+    display: none !important;
+    content: none !important;
+}
+
+.slider-nav-arrow {
+    background: transparent !important;
+    border: none !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 15px !important;
+    line-height: 1 !important;
+    padding: 4px 6px !important;
+    cursor: pointer !important;
+    transition: color 0.2s ease !important;
+}
+
+.slider-nav-arrow:hover {
+    color: #ffd76a !important;
+}
+
+.slider-dash-row {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.slider-dash {
+    display: inline-block !important;
+    width: 22px !important;
+    height: 3.5px !important;
+    border-radius: 3px !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    cursor: pointer !important;
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.slider-dash:hover {
+    background: rgba(255, 215, 106, 0.6) !important;
+}
+
+.slider-dash.active {
+    width: 44px !important;
+    background: linear-gradient(90deg, #ffd76a 0%, #e44c2a 100%) !important;
+    box-shadow: 0 0 10px rgba(217, 164, 65, 0.75) !important;
+}
+
+/* =========================================================
+   RESPONSİV VE TAŞMA ENGELLEME KURALLARI (HER CİHAZDA KUSURSUZ)
+   ========================================================= */
+html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    position: relative;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box !important;
+}
+
+.section-responsive-heading {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 34px !important;
+    font-weight: 900 !important;
+    color: #1b1715 !important;
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
+    text-transform: uppercase !important;
+    line-height: 1.25 !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+}
+
+@media (max-width: 991px) {
+    .hero-slider-wrap {
+        height: 540px !important;
+    }
+    .hero-slide-title {
+        font-size: 34px !important;
+    }
+    .hero-subheading {
+        font-size: 11.5px !important;
+        letter-spacing: 2px !important;
+    }
+    .hero-slide-desc {
+        font-size: 14px !important;
+        max-width: 90% !important;
+    }
+    .section-responsive-heading {
+        font-size: 27px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-slider-wrap {
+        height: 480px !important;
+    }
+    .hero-slide-content {
+        padding: 0 16px 50px 16px !important;
+    }
+    .hero-subheading {
+        font-size: 10.5px !important;
+        letter-spacing: 1.8px !important;
+        margin-bottom: 8px !important;
+    }
+    .hero-slide-title {
+        font-size: 24px !important;
+        line-height: 1.22 !important;
+        margin-bottom: 12px !important;
+    }
+    .hero-slide-desc {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+        max-width: 94% !important;
+        margin-bottom: 18px !important;
+    }
+    .btn-clean-gold {
+        padding: 11px 22px !important;
+        font-size: 11.5px !important;
+    }
+    .slider-dash {
+        width: 16px !important;
+    }
+    .slider-dash.active {
+        width: 32px !important;
+    }
+    .section-responsive-heading {
+        font-size: 22px !important;
+        line-height: 1.22 !important;
+    }
+    .title-section .title {
+        font-size: 22px !important;
+        line-height: 1.25 !important;
+    }
+    .container {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+        max-width: 100% !important;
+    }
+    .row {
+        margin-left: -10px !important;
+        margin-right: -10px !important;
+    }
+    .col-xs-6 {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    .product .box-content {
+        padding: 10px 8px !important;
+    }
+    .product .box-content h5 {
+        font-size: 13px !important;
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+    }
+}
+
+/* Parallax Page Titles */
+.page-title.parallax {
+    background-image: url('../images/parallax/1.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 90px 0 80px 0;
+}
+
+.page-title.parallax:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 10, 8, 0.78);
+}
+
+.page-title.parallax .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-title-heading .title {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs ul li {
+    display: inline-block;
+    color: #c9bfb5;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.breadcrumbs ul li a {
+    color: #c9bfb5;
+}
+
+.breadcrumbs ul li:last-child {
+    color: #d9a441;
+}
+
+/* Product Cards */
+.product.effect1 {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.35s ease;
+    border: 1px solid #ede7dc;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product.effect1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(228, 76, 42, 0.16);
+    border-color: #d9a441;
+}
+
+.product .box-image {
+    position: relative;
+    overflow: hidden;
+    height: 210px;
+    background: #1b1715;
+}
+
+.product .box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.product:hover .box-image img {
+    transform: scale(1.08);
+}
+
+.product .box-content {
+    padding: 18px 16px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product .box-content h5 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1b1715;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+}
+
+.product .product-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e44c2a;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+.product .product-price {
+    font-size: 18px;
+    font-weight: 900;
+    color: #e44c2a;
+    margin-top: 8px;
+}
+
+.product .product-unit {
+    font-size: 11px;
+    font-weight: 600;
+    color: #888888;
+    text-transform: uppercase;
+    margin-left: 3px;
+}
+
+/* Category header in menu */
+.menu-category-header {
+    margin: 40px 0 25px 0;
+    border-bottom: 2px solid #ede7dc;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(217, 164, 65, 0.25);
+    margin-bottom: 25px;
+}
+
+.menu-category-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1b1715;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.menu-category-title:before,
+.menu-category-title:after {
+    display: none !important;
+    content: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.menu-category-subtitle {
+    display: block;
+    color: #d9a441;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: 4px;
+}
+
+/* Reservation Section */
+.flat-make-res.index-2 {
+    background-color: #0d0a08;
+    color: #ffffff;
+    padding: 85px 0;
+}
+
+.reservation-page-left .title-section .top-section p {
+    color: #d9a441;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.reservation-page-left .title-section .title {
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.reservation-page-left h1.phone {
+    font-size: 36px;
+    font-weight: 900;
+    color: #d9a441;
+    margin: 20px 0;
+}
+
+.reservation-page-left h1.phone a {
+    color: #d9a441;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reservation-page-left h1.phone a:hover {
+    color: #e44c2a;
+}
+
+.reservation-page-input-box {
+    margin-bottom: 16px;
+}
+
+.reservation-page-input-box label {
+    display: block;
+    color: #ffffff;
+    font-size: 12.5px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.reservation-page-input-box input,
+.reservation-page-input-box select,
+.reservation-page-input-box textarea {
+    width: 100%;
+    background: #191410;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.reservation-page-input-box input:focus,
+.reservation-page-input-box select:focus,
+.reservation-page-input-box textarea:focus {
+    border-color: #d9a441;
+}
+
+.book-now-btn {
+    background: #e44c2a;
+    color: #ffffff;
+    border: none;
+    padding: 15px 36px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.book-now-btn:hover {
+    background: #d9a441;
+    color: #0d0a08;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   GOOGLE REVIEWS (RESPONSIVE CAROUSEL - COMPACT & BEAUTIFUL)
+   ========================================================= */
+.google-reviews-section {
+    background: #faf7f2;
+    padding: 75px 0 85px 0;
+    border-top: 1px solid #ede7dc;
+    border-bottom: 1px solid #ede7dc;
+}
+
+.google-badge-card {
+    background: #ffffff;
+    border: 1px solid #ede7dc;
+    border-radius: 12px;
+    padding: 18px 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.google-score {
+    font-size: 34px;
+    font-weight: 900;
+    color: #1b1715;
+    line-height: 1;
+}
+
+.google-stars {
+    color: #fbbc04;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* Review Carousel Track & Slides */
+#google-reviews-carousel-wrapper {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.reviews-slider-track {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.review-slide-item {
+    width: calc(33.333% - 16px);
+    display: block;
+}
+
+.google-review-card {
+    background: #ffffff;
+    border: 1px solid #ede7dc;
+    border-radius: 12px;
+    padding: 24px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.google-review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    border-color: #d9a441;
+}
+
+.review-author-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.review-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #e44c2a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.review-author-name {
+    font-size: 14.5px;
+    font-weight: 800;
+    color: #1b1715;
+    margin: 0;
+}
+
+.review-author-badge {
+    font-size: 11px;
+    color: #d9a441;
+    font-weight: 700;
+}
+
+.review-stars-row {
+    color: #fbbc04;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.review-stars-row span {
+    color: #888;
+    font-size: 11px;
+    margin-left: 6px;
+    font-weight: 400;
+}
+
+.review-body-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.review-google-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: #4285F4;
+}
+
+.review-card-footer {
+    border-top: 1px solid #f0ebe4;
+    padding-top: 8px;
+    font-size: 11px;
+    color: #888;
+}
+
+/* Reviews Carousel Mobile Navigation */
+.reviews-carousel-controls {
+    display: none; /* hidden on desktop */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.rev-arrow-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #d9a441;
+    color: #1b1715;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.rev-arrow-btn:hover {
+    background: #e44c2a;
+    border-color: #e44c2a;
+    color: #ffffff;
+}
+
+.rev-dots-wrap {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.rev-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rev-dot.active {
+    width: 24px;
+    border-radius: 10px;
+    background: #d9a441;
+}
+
+/* Mobile Review Styling (< 992px) */
+@media (max-width: 991px) {
+    .reviews-slider-track {
+        display: block;
+    }
+    .review-slide-item {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        display: none;
+    }
+    .review-slide-item.active {
+        display: block !important;
+    }
+    .reviews-carousel-controls {
+        display: flex;
+    }
+    .google-reviews-section {
+        padding: 50px 0 60px 0;
+    }
+    .google-review-card {
+        padding: 20px 18px;
+    }
+}
+
+/* Review Incentive Card */
+.review-incentive-card {
+    background: linear-gradient(135deg, #1b1715 0%, #2e1a12 100%);
+    border-radius: 12px;
+    padding: 30px 24px;
+    color: #ffffff;
+    margin-top: 35px;
+    border: 1px solid #d9a441;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.review-incentive-title {
+    font-size: 22px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.review-incentive-desc {
+    color: #d2c8bf;
+    font-size: 13.5px;
+    max-width: 640px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+.review-incentive-badge {
+    display: inline-block;
+    background: rgba(217, 164, 65, 0.2);
+    border: 1px dashed #d9a441;
+    color: #ffd76a;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 11.5px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.btn-google-review {
+    background: #4285F4;
+    color: #ffffff;
+    padding: 12px 28px;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.btn-google-review:hover {
+    background: #3367D6;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(66, 133, 244, 0.4);
+}
+
+/* =========================================================
+   INSTAGRAM FEED COMPONENT STYLES
+   ========================================================= */
+.instagram-feed-section {
+    background: #ffffff;
+    padding: 75px 0 80px 0;
+}
+
+.ig-profile-header {
+    background: #faf7f2;
+    border: 1px solid #ede7dc;
+    border-radius: 12px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.ig-profile-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ig-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.ig-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.ig-username {
+    font-size: 17px;
+    font-weight: 900;
+    color: #1b1715;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ig-meta {
+    font-size: 12px;
+    color: #777;
+    margin: 3px 0 0 0;
+}
+
+.ig-post-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 240px;
+    margin-bottom: 20px;
+    background: #1b1715;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.ig-post-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.ig-post-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 10, 8, 0.78);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    color: #ffffff;
+    transition: opacity 0.35s ease;
+    text-decoration: none !important;
+}
+
+.ig-post-card:hover img {
+    transform: scale(1.08);
+}
+
+.ig-post-card:hover .ig-post-overlay {
+    opacity: 1;
+}
+
+.ig-post-stats {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.ig-post-caption {
+    font-size: 11.5px;
+    line-height: 1.5;
+    color: #e5ded7;
+    max-height: 55px;
+    overflow: hidden;
+}
+
+.ig-post-tag {
+    margin-top: 8px;
+    font-size: 10.5px;
+    color: #d9a441;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Floating Bottom Buttons (.sc) */
+.sc {
+    position: fixed;
+    bottom: 22px;
+    left: 22px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sc a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.sc a:hover img {
+    transform: scale(1.12);
+}
+
+/* Footer */
+footer.footer {
+    background: #060403;
+    color: #a89f96;
+    padding: 45px 0 30px 0;
+    border-top: 1px solid rgba(217, 164, 65, 0.2);
+}
+
+footer.footer a {
+    color: #d9a441;
+    text-decoration: none;
+}
+
+footer.footer a:hover {
+    color: #ffffff;
+}
+
+.go-top-v1 {
+    display: inline-block;
+    float: right;
+    color: #d9a441;
+    font-weight: 800;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================= */
+@media (max-width: 1199px) {
+    .mainnav ul.menu > li > a {
+        padding: 34px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .mainnav {
+        display: none !important;
+    }
+    .btn-menu {
+        display: block !important;
+    }
+    .flat-vertical.reservation,
+    .flat-vertical.social-links {
+        display: none !important;
+    }
+    .hero-slider-wrap {
+        height: 500px;
+    }
+    .hero-slide-title {
+        font-size: 34px;
+    }
+    .hero-slide-desc {
+        font-size: 14.5px;
+    }
+    .page-title.parallax {
+        padding: 65px 0 55px 0;
+    }
+    .page-title-heading .title {
+        font-size: 28px;
+    }
+    .reservation-page-left {
+        padding-left: 0 !important;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-slider-wrap {
+        height: 440px;
+    }
+    .hero-slide-content {
+        padding: 0 16px;
+    }
+    .hero-slide-badge {
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+    .hero-slide-title {
+        font-size: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+    .hero-slide-desc {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+    .btn-primary-mangal,
+    .btn-outline-mangal {
+        padding: 11px 22px;
+        font-size: 11.5px;
+        letter-spacing: 1px;
+    }
+    .product .box-image {
+        height: 150px;
+    }
+    .product .box-content {
+        padding: 12px 10px;
+    }
+    .product .box-content h5 {
+        font-size: 13px;
+    }
+    .product .product-price {
+        font-size: 15px;
+    }
+    .ig-post-card {
+        height: 165px;
+    }
+    .go-top-v1 {
+        float: none;
+        display: block;
+        margin-top: 15px;
+    }
+    .sc {
+        bottom: 16px;
+        left: 16px;
+    }
+    .sc a img {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* ==========================================================================
+   23. KAPSAMLI GÖRÜNÜRLÜK, LIGHTBOX, GALERİ FİLTRE & GENEL TASARIM DÜZELTMELERİ
+   ========================================================================== */
+
+/* 23.1 Ürün Kartı İçi Gizli Başlık (.titless) ve Büyüteç Efekti */
+.titless {
+    display: none !important;
+}
+
+.product .box-image.imagess,
+.gallery-card.imagess {
+    cursor: zoom-in;
+}
+
+.product .box-image.imagess::after {
+    content: "\f00e";
+    font-family: "FontAwesome";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(13, 10, 8, 0.78);
+    border: 1px solid rgba(217, 164, 65, 0.55);
+    color: #ffd76a;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 0.28s ease;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.product:hover .box-image.imagess::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* 23.2 Foto Galeri Filtre Butonları (Görünmeyen Beyaz Yazı Hatası Çözümü) */
+.gallery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 34px;
+}
+
+.gallery-filter-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff !important;
+    color: #1f1a17 !important;
+    border: 1.5px solid #e2d9cc !important;
+    border-radius: 50px !important;
+    padding: 10px 24px !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1) !important;
+    line-height: 1.3 !important;
+}
+
+.gallery-filter-btn:hover {
+    background: #fdf6ea !important;
+    color: #c83d1e !important;
+    border-color: #d9a441 !important;
+    transform: translateY(-2px);
+}
+
+.gallery-filter-btn.active {
+    background: linear-gradient(135deg, #d9a441 0%, #e44c2a 100%) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    box-shadow: 0 8px 20px rgba(228, 76, 42, 0.28);
+    transform: translateY(-2px);
+}
+
+/* 23.3 Tam Ekran Lightbox Modal (#lightbox) */
+#lightbox {
+    display: none !important;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(8, 6, 4, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 9999999;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+#lightbox.open {
+    display: flex !important;
+    opacity: 1;
+}
+
+#lightbox-image {
+    max-width: min(90vw, 960px);
+    max-height: 76vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 14px;
+    border: 2px solid rgba(217, 164, 65, 0.45);
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.85);
+    background: #120e0b;
+}
+
+#lightbox-title {
+    margin-top: 16px;
+    padding: 10px 24px;
+    background: rgba(25, 20, 16, 0.92);
+    border: 1px solid rgba(217, 164, 65, 0.35);
+    border-radius: 50px;
+    color: #ffd76a;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.4px;
+    max-width: 90vw;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+#lightbox .close-button {
+    position: fixed;
+    top: 24px;
+    right: 28px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1.5px solid rgba(217, 164, 65, 0.45);
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    z-index: 10;
+    user-select: none;
+}
+
+#lightbox .close-button:hover {
+    background: #e44c2a;
+    border-color: #e44c2a;
+    transform: rotate(90deg) scale(1.08);
+}
+
+#lightbox .lightbox-navprev,
+#lightbox .lightbox-navnext {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(20, 16, 12, 0.82);
+    border: 1.5px solid rgba(217, 164, 65, 0.45);
+    color: #ffd76a;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    z-index: 10;
+    user-select: none;
+}
+
+#lightbox .lightbox-navprev {
+    left: 24px;
+}
+
+#lightbox .lightbox-navnext {
+    right: 24px;
+}
+
+#lightbox .lightbox-navprev:hover,
+#lightbox .lightbox-navnext:hover {
+    background: linear-gradient(135deg, #d9a441, #e44c2a);
+    color: #ffffff;
+    border-color: transparent;
+    transform: translateY(-50%) scale(1.08);
+}
+
+/* 23.4 Rezervasyon Bölümü Koyu Zemin Üzerinde Görünmeyen Yazılar & Çizgiler */
+.reservation-page-left .reservation-page-form h3:before,
+.reservation-page-left .reservation-page-form h3:after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+}
+
+.reservation-page-left .reservation-page-form h3 span {
+    background-color: transparent !important;
+    color: #ffd76a !important;
+    padding-right: 0 !important;
+}
+
+.reservation-page-left .reservation-page-form > span {
+    color: #ffd76a !important;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.reservation-page-left .reservation-page-form ul {
+    margin: 12px 0 22px 0 !important;
+    padding: 14px 18px !important;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(217, 164, 65, 0.22);
+    border-radius: 12px;
+}
+
+.reservation-page-left .reservation-page-form ul li {
+    color: #f3ede4 !important;
+    font-size: 14.5px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 6px;
+    padding-left: 16px !important;
+}
+
+.reservation-page-left .reservation-page-form ul li:last-child {
+    margin-bottom: 0;
+}
+
+.reservation-page-left .reservation-page-form ul li:before {
+    background-color: #d9a441 !important;
+    top: 10px !important;
+}
+
+.reservation-page-left .reservation-page-form ul li span {
+    color: #ffd76a !important;
+    font-weight: 700 !important;
+}
+
+.reservation-page-input-box label {
+    color: #e9e1d6 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    margin-bottom: 6px !important;
+    display: block;
+}
+
+.reservation-page-input-box select option {
+    background-color: #18130f !important;
+    color: #ffffff !important;
+    padding: 8px;
+}
+
+.reservation-page-input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* 23.5 Masaüstü Header ve Menü Hizalama İyileştirmesi */
+@media (min-width: 992px) {
+    .header #mainnav > ul.menu {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: nowrap;
+        gap: 6px;
+    }
+
+    .header #mainnav > ul.menu > li {
+        float: none !important;
+        display: inline-flex !important;
+        align-items: center !important;
+    }
+
+    .header #mainnav > ul.menu > li > a {
+        padding: 0 15px !important;
+        font-size: 13.5px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.6px;
+        position: relative;
+        transition: color 0.25s ease !important;
+    }
+
+    .header #mainnav > ul.menu > li:not(.logo) > a::after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        bottom: 34px;
+        height: 2px;
+        background: linear-gradient(90deg, #d9a441, #e44c2a);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.25s ease;
+        border-radius: 2px;
+    }
+
+    .header #mainnav > ul.menu > li:not(.logo):hover > a::after,
+    .header #mainnav > ul.menu > li.active:not(.logo) > a::after {
+        transform: scaleX(1);
+    }
+
+    .header #mainnav > ul.menu > li.logo > a {
+        padding: 12px 22px !important;
+        line-height: 1 !important;
+    }
+}
+
+/* 23.6 Sıkça Sorulan Sorular (SSS / FAQ) & Yerel SEO Bilgi Kartları */
+.sapak-faq-section {
+    background: linear-gradient(180deg, #faf7f2 0%, #f3ede2 100%);
+    padding: 70px 0;
+    border-top: 1px solid rgba(217, 164, 65, 0.2);
+}
+
+.sapak-faq-grid {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sapak-faq-item {
+    background: #ffffff;
+    border: 1px solid rgba(217, 164, 65, 0.28);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s ease;
+}
+
+.sapak-faq-item:hover {
+    border-color: rgba(217, 164, 65, 0.65);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+.sapak-faq-item summary {
+    list-style: none;
+    padding: 18px 24px;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1b1613;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    user-select: none;
+}
+
+.sapak-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.sapak-faq-item summary .faq-q-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sapak-faq-item summary .faq-q-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(217, 164, 65, 0.14);
+    color: #c83d1e;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.sapak-faq-item summary .faq-toggle-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #f6f1e9;
+    color: #5c4b3b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+    flex-shrink: 0;
+}
+
+.sapak-faq-item[open] summary {
+    background: #fdfaf5;
+    color: #c83d1e;
+    border-bottom: 1px solid rgba(217, 164, 65, 0.2);
+}
+
+.sapak-faq-item[open] summary .faq-toggle-icon {
+    transform: rotate(180deg);
+    background: #e44c2a;
+    color: #ffffff;
+}
+
+.sapak-faq-answer {
+    padding: 18px 24px 20px 68px;
+    color: #4a423b;
+    font-size: 14.5px;
+    line-height: 1.75;
+    background: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .sapak-faq-item summary {
+        padding: 15px 16px;
+        font-size: 14.5px;
+    }
+    .sapak-faq-answer {
+        padding: 14px 16px 16px 16px;
+        font-size: 13.5px;
+    }
+    #lightbox .lightbox-navprev {
+        left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    #lightbox .lightbox-navnext {
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    #lightbox .close-button {
+        top: 14px;
+        right: 14px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* =========================================================
+   MOBİL YAZI TAŞMALARINI VE HORIZONTAL SCROLL'U KESİN ENGELLEME
+   ========================================================= */
+@media (max-width: 767px) {
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        position: relative !important;
+    }
+
+    *, *:before, *:after {
+        box-sizing: border-box !important;
+    }
+
+    h1, .hero-slide-title {
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+        letter-spacing: 0.5px !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+
+    h2, .section-responsive-heading, .title-section .title {
+        font-size: 21px !important;
+        line-height: 1.3 !important;
+        letter-spacing: 0.3px !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+    }
+
+    h3, .review-incentive-title {
+        font-size: 17px !important;
+        line-height: 1.35 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .hero-slide-desc,
+    .content-story,
+    p {
+        font-size: 13.5px !important;
+        line-height: 1.6 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+
+    .row {
+        margin-left: -8px !important;
+        margin-right: -8px !important;
+    }
+
+    .col-xs-6, .col-sm-6, .col-md-6, .col-md-3, .col-md-4, .col-md-12 {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .review-slide-item,
+    .google-review-card {
+        max-width: 100% !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+}
+
+
+/* =========================================================
+   LUXURY CLEAN MOBILE HAMBURGER BUTTON (SADE & ZARİF BUTON)
+   ========================================================= */
+@media (min-width: 992px) {
+    .btn-menu,
+    #mainnav-mobi,
+    .mainnav-mobi {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 5px !important;
+        float: right !important;
+        margin: 18px 0 !important;
+        width: 44px !important;
+        height: 44px !important;
+        cursor: pointer !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(217, 164, 65, 0.45) !important;
+        border-radius: 8px !important;
+        padding: 0 !important;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+        transition: all 0.25s ease !important;
+        position: relative !important;
+        z-index: 100001 !important;
+    }
+
+    .btn-menu:hover {
+        background: rgba(217, 164, 65, 0.15) !important;
+        border-color: #ffd76a !important;
+    }
+
+    /* Suppress any conflicting pseudo elements from style.css */
+    .btn-menu:before,
+    .btn-menu:after {
+        display: none !important;
+        content: none !important;
+    }
+
+    /* Three crisp gold lines */
+    .btn-menu span,
+    .btn-menu span:before,
+    .btn-menu span:after {
+        display: block !important;
+        width: 22px !important;
+        height: 2px !important;
+        background-color: #d9a441 !important;
+        border-radius: 2px !important;
+        transition: all 0.25s ease !important;
+        position: relative !important;
+        margin: 0 !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+
+    .btn-menu span {
+        position: relative !important;
+    }
+
+    .btn-menu span:before {
+        content: '' !important;
+        position: absolute !important;
+        top: -7px !important;
+        left: 0 !important;
+    }
+
+    .btn-menu span:after {
+        content: '' !important;
+        position: absolute !important;
+        bottom: -7px !important;
+        left: 0 !important;
+    }
+
+    /* Clean 'X' Transformation when Active */
+    .btn-menu.active {
+        background: rgba(217, 164, 65, 0.2) !important;
+        border-color: #ffd76a !important;
+    }
+
+    .btn-menu.active span {
+        background-color: transparent !important;
+    }
+
+    .btn-menu.active span:before {
+        top: 0 !important;
+        transform: rotate(45deg) !important;
+        background-color: #ffd76a !important;
+    }
+
+    .btn-menu.active span:after {
+        bottom: 0 !important;
+        transform: rotate(-45deg) !important;
+        background-color: #ffd76a !important;
+    }
+
+    /* Mobile Drawer */
+    #mainnav-mobi,
+    .mainnav-mobi {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        background: linear-gradient(180deg, #130f0c 0%, #0d0a08 100%) !important;
+        border-top: 1px solid rgba(217, 164, 65, 0.3) !important;
+        border-bottom: 2px solid #d9a441 !important;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.95) !important;
+        z-index: 999999 !important;
+        padding: 0 !important;
+        max-height: calc(100vh - 85px) !important;
+        overflow-y: auto !important;
+    }
+}
+
+/* =========================================================
+   RESERVATION FORM: ÖZEL NOTUNUZ & BUTON DÜZENİ
+   ========================================================= */
+.reservation-page-left .reservation-page-form .reservation-page-input-box.notes-full-box,
+.reservation-notes-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    display: block !important;
+    margin-bottom: 18px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.reservation-page-left .reservation-page-form .reservation-notes-box textarea,
+.reservation-page-left .reservation-page-form .notes-full-box textarea {
+    width: 100% !important;
+    min-height: 85px !important;
+    resize: vertical !important;
+}
+
+.reservation-page-left .reservation-page-form .reservation-booking-full {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 14px !important;
+    margin-top: 22px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.reservation-booking-full .book-now-btn,
+.reservation-booking-full button,
+.reservation-booking-full a {
+    flex: 1 1 200px !important;
+    min-width: 200px !important;
+    height: 52px !important;
+    line-height: 52px !important;
+    padding: 0 22px !important;
+    border-radius: 6px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+}
+
+@media (max-width: 767px) {
+    .reservation-booking-full {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+    .reservation-booking-full .book-now-btn,
+    .reservation-booking-full button,
+    .reservation-booking-full a {
+        width: 100% !important;
+        min-width: 100% !important;
+        flex: none !important;
+    }
+}
+
+
+/* =========================================================
+   REAL INSTAGRAM FEED CARDS (YÜKSEK KONTRAST & ŞIK TASARIM)
+   ========================================================= */
+.sapak-ig-section {
+    background-color: #120e0b !important;
+    padding: 85px 0 75px 0 !important;
+    border-top: 1px solid rgba(217, 164, 65, 0.25) !important;
+    border-bottom: 1px solid rgba(217, 164, 65, 0.25) !important;
+    position: relative !important;
+}
+
+.sapak-ig-card {
+    background: #1c1613 !important;
+    border: 1px solid rgba(217, 164, 65, 0.3) !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+.sapak-ig-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.7) !important;
+    border-color: #d9a441 !important;
+}
+
+/* Card Header */
+.ig-card-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 12px 14px !important;
+    background: #17110e !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.ig-avatar {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    border: 1.5px solid #d9a441 !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+}
+
+.ig-user-meta {
+    flex-grow: 1 !important;
+    line-height: 1.25 !important;
+}
+
+.ig-username {
+    display: block !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    letter-spacing: 0.3px !important;
+}
+
+.ig-verified {
+    color: #3897f0 !important;
+    font-size: 11px !important;
+    margin-left: 3px !important;
+}
+
+.ig-location {
+    display: block !important;
+    color: #d9a441 !important;
+    font-size: 11px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.ig-logo-link {
+    color: #d9a441 !important;
+    font-size: 18px !important;
+    transition: transform 0.2s ease, color 0.2s ease !important;
+}
+
+.ig-logo-link:hover {
+    color: #ffffff !important;
+    transform: scale(1.15) !important;
+}
+
+/* Media Wrap */
+.ig-media-wrap {
+    position: relative !important;
+    width: 100% !important;
+    height: 250px !important;
+    overflow: hidden !important;
+    background: #000000 !important;
+}
+
+.ig-media-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.sapak-ig-card:hover .ig-media-wrap img {
+    transform: scale(1.06) !important;
+}
+
+.ig-media-badge {
+    position: absolute !important;
+    bottom: 12px !important;
+    left: 12px !important;
+    background: rgba(14, 10, 8, 0.88) !important;
+    color: #ffd76a !important;
+    padding: 4px 10px !important;
+    border-radius: 6px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    border: 1px solid rgba(217, 164, 65, 0.4) !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+}
+
+/* Action Icons */
+.ig-actions {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 14px 4px 14px !important;
+    background: #1c1613 !important;
+}
+
+.ig-action-left {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+}
+
+.ig-act-icon {
+    font-size: 16px !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    transition: transform 0.2s ease, color 0.2s ease !important;
+}
+
+.ig-act-icon.heart {
+    color: #ed4956 !important;
+}
+
+.ig-act-icon:hover {
+    transform: scale(1.15) !important;
+}
+
+/* Card Body (High Contrast Typography) */
+.ig-card-body {
+    padding: 4px 14px 16px 14px !important;
+    background: #1c1613 !important;
+    flex-grow: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.ig-likes-count {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 12.5px !important;
+    margin-bottom: 6px !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.ig-caption {
+    color: #f3ece4 !important;
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 8px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    overflow-wrap: break-word !important;
+}
+
+.ig-caption-user {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    margin-right: 5px !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.ig-tags {
+    color: #d9a441 !important;
+    font-size: 11.5px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+    line-height: 1.4 !important;
+    overflow-wrap: break-word !important;
+}
+
+.ig-footer-row {
+    margin-top: auto !important;
+    padding-top: 8px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.07) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.ig-date {
+    color: #9c8e82 !important;
+    font-size: 10.5px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+}
+
+.ig-view-link {
+    color: #ffd76a !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    transition: color 0.2s ease, transform 0.2s ease !important;
+}
+
+.ig-view-link:hover {
+    color: #ffffff !important;
+    transform: translateX(3px) !important;
+}
+
+/* Callout Bar */
+.ig-cta-box {
+    background: linear-gradient(135deg, #1b1715 0%, #261911 100%) !important;
+    border: 1px solid rgba(217, 164, 65, 0.4) !important;
+    border-radius: 14px !important;
+    padding: 30px 25px !important;
+    margin-top: 35px !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6) !important;
+}
