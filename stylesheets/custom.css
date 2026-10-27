@@ -2751,3 +2751,36 @@ footer.footer a:hover {
     margin-top: 35px !important;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6) !important;
 }
+
+
+/* =========================================================
+   INSTAGRAM HEADING HIGH CONTRAST (ARKA PLANLA KARIŞMAYAN NET YAZI)
+   ========================================================= */
+.sapak-ig-section .section-responsive-heading,
+.sapak-ig-section .ig-heading-contrast,
+.sapak-ig-section h2 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9) !important;
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    text-transform: none !important;
+}
+
+.sapak-ig-section .section-responsive-heading span,
+.sapak-ig-section .ig-heading-contrast span,
+.sapak-ig-section .title-gold {
+    color: #ffd76a !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9) !important;
+}
+
+.sapak-ig-section p {
+    color: #ded1c4 !important;
+}
+
+@media (max-width: 767px) {
+    .sapak-ig-section .section-responsive-heading,
+    .sapak-ig-section .ig-heading-contrast,
+    .sapak-ig-section h2 {
+        font-size: 23px !important;
+    }
+}
