@@ -507,7 +507,7 @@ $(document).ready(function() {
             "- Telefon: " + phone;
         if (notes) waMessage += "\n- Not: " + notes;
 
-        var waUrl = "https://wa.me/905367116537?text=" + encodeURIComponent(waMessage);
+        var waUrl = "https://wa.me/905364116537?text=" + encodeURIComponent(waMessage);
 
         var modalHtml = '<div id="res-success-modal" style="position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999999;display:flex;align-items:center;justify-content:center;padding:20px;">' +
             '<div style="background:#1b1715;border:2px solid #d9a441;border-radius:12px;padding:35px 25px;max-width:500px;width:100%;text-align:center;color:#fff;">' +

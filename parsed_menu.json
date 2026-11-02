@@ -5,61 +5,61 @@
     "items": [
       {
         "name": "Kuzu Pirzola",
-        "price": "",
+        "price": "1850 TL / KG",
         "img": "/images/menu/current/kuzu-pirzola-kg.jpg",
         "desc": ""
       },
       {
         "name": "Et Izgara",
-        "price": "",
+        "price": "1850 TL / KG",
         "img": "/images/menu/current/et-izgara-kg.jpg",
         "desc": ""
       },
       {
         "name": "Et Biftek",
-        "price": "",
+        "price": "1850 TL / KG",
         "img": "/images/menu/current/et-biftek-kg.jpg",
         "desc": ""
       },
       {
         "name": "Kuzu Lokum",
-        "price": "",
+        "price": "1850 TL / KG",
         "img": "/images/menu/current/kuzu-lokum-kg.jpg",
         "desc": ""
       },
       {
         "name": "Akçaabat Köfte",
-        "price": "",
+        "price": "1300 TL / KG",
         "img": "/images/menu/current/akcabat-kofte-kg.jpg",
         "desc": ""
       },
       {
         "name": "Tavuk Kanat",
-        "price": "",
+        "price": "850 TL / KG",
         "img": "/images/menu/current/tavuk-kanat-kg.jpg",
         "desc": ""
       },
       {
         "name": "Tavuk Kelebek",
-        "price": "",
+        "price": "850 TL / KG",
         "img": "/images/menu/current/tavuk-kelebek-kg.jpg",
         "desc": ""
       },
       {
         "name": "Tavuk Pirzola",
-        "price": "",
+        "price": "850 TL / KG",
         "img": "/images/menu/current/tavuk-pirzola-kg.jpg",
         "desc": ""
       },
       {
         "name": "Karışık Izgara",
-        "price": "",
+        "price": "1600 TL / KG",
         "img": "/images/menu/current/karisik-izgara-kg.jpg",
         "desc": ""
       },
       {
         "name": "Sac Kavurma",
-        "price": "",
+        "price": "850 TL",
         "img": "/images/menu/current/sac-kavurma.jpg",
         "desc": ""
       }
@@ -71,19 +71,19 @@
     "items": [
       {
         "name": "Köy Kahvaltısı",
-        "price": "",
+        "price": "2 Kişilik: 1000 TL / 4 Kişilik: 1250 TL",
         "img": "/images/menu/current/koy-kahvaltisi.jpg",
         "desc": ""
       },
       {
         "name": "Semaver Çay",
-        "price": "",
+        "price": "400 TL",
         "img": "/images/menu/current/semaver-cay.jpg",
         "desc": ""
       },
       {
         "name": "Türk Kahvesi",
-        "price": "",
+        "price": "100 TL",
         "img": "/images/menu/current/turk-kahvesi.jpg",
         "desc": ""
       }
@@ -95,55 +95,55 @@
     "items": [
       {
         "name": "Kola",
-        "price": "",
+        "price": "50 TL",
         "img": "/images/menu/current/soguk-icecekler.jpg",
         "desc": ""
       },
       {
         "name": "Fanta",
-        "price": "",
+        "price": "50 TL",
         "img": "/images/menu/current/soguk-icecekler.jpg",
         "desc": ""
       },
       {
         "name": "Soda",
-        "price": "",
+        "price": "30 TL",
         "img": "/images/menu/current/soguk-icecekler.jpg",
         "desc": ""
       },
       {
         "name": "Meyveli Soda",
-        "price": "",
+        "price": "35 TL",
         "img": "/images/menu/current/soguk-icecekler.jpg",
         "desc": ""
       },
       {
         "name": "Su",
-        "price": "",
+        "price": "10 TL",
         "img": "/images/menu/current/soguk-icecekler.jpg",
         "desc": ""
       },
       {
         "name": "Ayran",
-        "price": "",
+        "price": "40 TL",
         "img": "/images/menu/current/ayran-salgam.jpg",
         "desc": ""
       },
       {
         "name": "Şalgam",
-        "price": "",
+        "price": "50 TL",
         "img": "/images/menu/current/ayran-salgam.jpg",
         "desc": ""
       },
       {
         "name": "Dondurma",
-        "price": "",
+        "price": "200 TL",
         "img": "/images/menu/current/dondurma.jpg",
         "desc": ""
       },
       {
         "name": "Çerezler",
-        "price": "",
+        "price": "100 TL",
         "img": "/images/menu/current/cerezler.jpg",
         "desc": ""
       }
