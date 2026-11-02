@@ -1,3 +1,13 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Test logs & scratch
+*.log
+*.tmp
+tests/reports/
+scratch/
+
 # OS generated files
 .DS_Store
 Thumbs.db
@@ -8,7 +18,3 @@ desktop.ini
 .idea/
 *.sublime-project
 *.sublime-workspace
-
-# Logs & temp
-*.log
-*.tmp

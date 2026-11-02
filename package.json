@@ -1,0 +1,20 @@
+{
+  "name": "sapak-et-mangal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sapak Et Mangal Bafra Resmi Web Sitesi",
+  "scripts": {
+    "test:seo": "node tests/test-seo.js",
+    "test:links": "node tests/test-links.js",
+    "test:responsive": "node tests/test-responsive.js",
+    "test:a11y": "node tests/test-a11y.js",
+    "test:lighthouse": "node tests/test-lighthouse.js",
+    "test:security": "node tests/test-security.js",
+    "preflight": "node tests/run-preflight.js"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "lighthouse": "^13.6.0",
+    "playwright": "^1.64.1"
+  }
+}
